@@ -1,0 +1,15 @@
+<div class="card" *ngFor="let m of movieItems">
+
+  <h5 class="card-header">
+    <a [routerLink]="['/movies/add/', m._id]">{{m.name}}</a>
+    <span>  ({{m.year}})</span>
+  </h5>
+
+  <div class="card-body">
+    <p class="card-text">{{m.description}}</p>
+    <div>
+      <img src="../../../../assets/images/gold_star.png" alt="">
+      <span>  {{m.rating}}</span>
+    </div>
+  </div>
+</div>

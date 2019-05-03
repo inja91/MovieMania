@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-6">
+    <mm-pagination
+    [totalItems]="moviesList?.count" [pageSize]="params?.pageSize"
+    (onPageSelected)="changePage($event)"></mm-pagination>
+  </div>
+
+  <div class="col-6">
+    <form>
+      <div class="form-group row">
+        <label for="sort" class="col-2 col-form-label">Sort by:</label>
+        <div class="col-3">
+          <select id="sort">
+            <option value="rating">Rating</option>
+            <option value="year">Year</option>
+          </select>
+        </div>
+        <div class="col-1">
+          <button (click)="getCrit()">&darr;</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <mm-movie-item [movieItems]="moviesList?.results"></mm-movie-item>
+  </div>
+</div>

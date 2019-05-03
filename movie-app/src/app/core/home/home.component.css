@@ -1,0 +1,18 @@
+section {
+    width: 100%;
+    padding: 3em 15%; }
+      
+  .intro {
+    height: 50em;
+    background: url("../../../assets/images/ms4.jpg");
+    background-size: cover; }
+    .intro h1 {
+      position: sticky;
+      text-align: center;
+      top: 250px;
+      margin-top: 7%;
+      color: #fff;
+      font-weight: normal;
+      background: rgba(55, 66, 73, 0.6);
+      font-size: 4em; }
+
